@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+body {
+  height: 100vh;
+}
+#main_background {
+  background-image: url(https://images.unsplash.com/photo-1500964757637-c85e8a162699?q=80&w=1806&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  /* background-image: url(https://images.unsplash.com/photo-1673794784636-2e69436d3eee?q=80&w=2128&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); */
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+/* MAIN SECTION */
+#main_container {
+  height: 100%;
+}
+/* Header */
+#main_header {
+  padding: 2rem;
+  display: flex;
+  gap: 3rem;
+  justify-content: space-evenly;
+  color: rgb(45, 44, 44);
+  backdrop-filter: blur(10px);
+}
+#header_title {
+  font-size: 30px;
+}
+#header_location_info {
+  font-size: 20px;
+}
+#header_location_info b {
+  color: black;
+  font-size: 24px;
+}
+#header_location_icon {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+#header_location_text {
+  display: inline;
+}
+#header_searchbar {
+  background-color: transparent;
+  border: 1px solid black;
+  text-align: center;
+  border-radius: 50px;
+  outline: none;
+  width: 20rem;
+  font-size: 18px;
+  padding: 0.35rem;
+}
+/* WEATHER INFO SECTION */
+#weather_info_icon {
+  width: 8rem;
+  height: 8rem;
+  background-size: cover;
+}
+#weather_info_container {
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#weather_info_wrapper {
+  display: flex;
+  gap: 3rem;
+  padding: 3rem;
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+  font-size: 18px;
+  color: rgb(56, 54, 54);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#weather_info_date-time {
+  font-size: 24px;
+  color: black;
+  font-weight: 500;
+}
+#weather_info_feels-like {
+  margin-bottom: 1rem;
+}
+#weather_info_temperature {
+  font-size: 70px;
+  color: rgb(251, 255, 0);
+}
+.weather_details {
+  margin-top: 0.5rem;
+}

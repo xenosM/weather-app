@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- JS -->
+    <script defer src="app.js"></script>
+  </head>
+
+  <body>
+    <div id="main_background"></div>
+    <main id="main_container">
+      <header id="main_header">
+        <h2 id="header_title">Weather App</h2>
+        <div id="header_location_info">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            id="header_location_icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+            />
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+            />
+          </svg>
+          <div id="header_location_text">Weather in <b>Jaleshwar</b></div>
+        </div>
+        <input
+          type="text"
+          id="header_searchbar"
+          placeholder="Enter City Name"
+        />
+      </header>
+      <section id="weather_info_container">
+        <div id="weather_info_wrapper">
+          <div id="whether_info_icon_wrapper">
+            <div id="weather_info_icon"></div>
+            <div id="weather_info_sunrise">Sunrise 5:50</div>
+            <div id="weather_info_sunset">Sunset 18:12</div>
+          </div>
+          <div id="weather_info_condition_wrapper">
+            <div id="weather_info_date-time">Friday December 22 2024 15:00</div>
+            <div id="weather_info_temperature">+22°C</div>
+            <div id="weather_info_feels-like">Feels Like 23°C</div>
+            <div id="weather_info_main-condition">Cloudy</div>
+            <div id="weather_info_description">BrokenCloud</div>
+          </div>
+          <div id="weather_info_details_wrapper">
+            <div id="weather_info_details">
+              <h3>More Details:</h3>
+              <div id="weather_info_wind-speed" class="weather_details">
+                Wind Speed
+              </div>
+              <div id="weather_info_humidity" class="weather_details">
+                Humidity
+              </div>
+              <div id="weather_info_pressure" class="weather_details">
+                Pressure
+              </div>
+              <div id="weather_info_min-temp" class="weather_details">
+                Min Temp:
+              </div>
+              <div id="weather_info_max-temp" class="weather_details">
+                Max Temp:
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <footer></footer> -->
+    </main>
+  </body>
+</html>
